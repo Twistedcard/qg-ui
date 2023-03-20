@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <card
+      :width="500"
+      :imgHeight="200"
+      summary="范德萨范德萨范德萨范德萨"
+    ></card>
+    <card summary="阿啦啦啦啦范德萨范德萨">
+      <template v-slot:footer
+        ><div class="footer">法规的撒法规的撒割发代首割发代首</div></template
+      >
+    </card>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.footer {
+  text-align: left;
+  padding: 8px;
 }
 </style>
